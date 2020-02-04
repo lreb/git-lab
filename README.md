@@ -57,6 +57,10 @@ This project was generated with to give solutions to all users that need IT solu
 
 `git checkout -b mynewbranch`
 
+### Push branch change to remote server
+
+git push --set-upstream <origin_name> <branch_name>
+
 ### Switch branch
 
 `git checkout mybranch`
@@ -91,6 +95,14 @@ rm is the remove command
 -r will allow recursive removal
 –cached will only remove files from the index. Your files will still be there.
 The . indicates that all files will be untracked. You can untrack a specific file with git rm --cached foo.txt
+
+### Add remote url
+
+git remote add origin <ssh-url>
+
+### Remove remote url
+
+git remote rm origin or <origin name>
 
 ### Releases & Version Tags
 
