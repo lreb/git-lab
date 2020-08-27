@@ -97,6 +97,24 @@ rm is the remove command
 –cached will only remove files from the index. Your files will still be there.
 The . indicates that all files will be untracked. You can untrack a specific file with git rm --cached foo.txt
 
+## Undo all uncommitted or unsaved changes
+his will unstage all files you might have staged with git add:
+
+'git reset'
+This will revert all local uncommitted changes (should be executed in repo root):
+
+´´´git checkout .´´´
+You can also revert uncommitted changes only to particular file or directory:
+
+git checkout [some_dir|file.txt]
+Yet another way to revert all uncommitted changes (longer to type, but works from any subdirectory):
+
+git reset --hard HEAD
+This will remove all local untracked files, so only git tracked files remain:
+
+git clean -fdx
+WARNING: -x will also remove all ignored files, including ones specified by .gitignore! You may want to use -n for preview of files to be deleted.
+
 ### Add remote url
 
 git remote add origin <ssh-url>
