@@ -106,9 +106,6 @@ This will revert all local uncommitted changes (should be executed in repo root)
 `git checkout .` 
 You can also revert uncommitted changes only to particular file or directory:
 
-`git checkout [some_dir|file.txt]`
-Yet another way to revert all uncommitted changes (longer to type, but works from any subdirectory):
-
 `git reset --hard HEAD`
 This will remove all local untracked files, so only git tracked files remain:
 
@@ -127,6 +124,14 @@ CAUTION: as above but removes ignored files like config.
 
 git clean -fxd :/ 
 CAUTION: as above, but cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)
+
+### Revert file to previous commit version
+`git checkout [some_dir|file.txt]`
+Yet another way to revert all uncommitted changes (longer to type, but works from any subdirectory):
+ 
+`git checkout <commit_number> -- dir1\dir2\myfile.cs`
+
+then just add this file again with `git add dir1/dir2/myfile.cs`, commit your changes and push your commits
 
 
 ### Add remote url
