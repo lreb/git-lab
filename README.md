@@ -115,6 +115,20 @@ This will remove all local untracked files, so only git tracked files remain:
 `git clean -fdx`
 WARNING: -x will also remove all ignored files, including ones specified by .gitignore! You may want to use -n for preview of files to be deleted.
 
+git reset --hard # removes staged and working directory changes
+
+read comments and manual.
+
+git clean -f -d
+remove untracked
+
+git clean -f -x -d 
+CAUTION: as above but removes ignored files like config.
+
+git clean -fxd :/ 
+CAUTION: as above, but cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)
+
+
 ### Add remote url
 
 `git remote add origin <ssh-url>`
