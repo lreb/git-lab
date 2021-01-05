@@ -11,6 +11,10 @@ This project was generated with to give solutions to all users that need IT solu
 
 ----------
 
+##
+
+![alt text](https://nvie.com/img/git-model@2x.png)
+
 ## GIT tricks
 
 ### Add .gitignore
