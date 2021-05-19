@@ -181,4 +181,4 @@ Checkout a specific release version
 ### Sources
 
 [Git documentation](https://git-scm.com/)
-
+[Cheat Sheets](https://www.xarg.org/cheat-sheet/git/)
