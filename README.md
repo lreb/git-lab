@@ -168,6 +168,16 @@ Checkout a specific release version
 
 `git checkout v1.0.0`
 
+### Rename previous commits
+
+`git rebase -i HEAD~N`
+
+### Rename previous merhe commit
+
+`git checkout <HASH>`
+`git commit --amend`
+`git rebase HEAD <BRANCH_NAME>`
+
 ### Sources
 
 [Git documentation](https://git-scm.com/)
