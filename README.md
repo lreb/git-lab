@@ -137,6 +137,9 @@ Yet another way to revert all uncommitted changes (longer to type, but works fro
 
 then just add this file again with `git add dir1/dir2/myfile.cs`, commit your changes and push your commits
 
+### view remote url
+
+`git remote -v`
 
 ### Add remote url
 
