@@ -135,6 +135,10 @@ Yet another way to revert all uncommitted changes (longer to type, but works fro
  
 `git checkout <commit_number> -- dir1\dir2\myfile.cs`
 
+or
+
+`git checkout origin/<branch_name> -- dir1\dir2\myfile.cs`
+
 then just add this file again with `git add dir1/dir2/myfile.cs`, commit your changes and push your commits
 
 ### view remote url
