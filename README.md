@@ -40,6 +40,25 @@ The below command will list all the stashed changesets.
 $ git stash list
 The below command will discard the most recently stashed changeset.
 $ git stash drop
+
+You’re on feature/login, halfway through coding, but a bug needs fixing on main:
+```bash
+# Save your work
+git stash
+
+# Switch branches and fix bug
+git checkout main
+git pull
+git commit -am "Fix urgent bug"
+
+# Go back and continue your work
+git checkout feature/login
+git stash pop
+
+```
+
+Your changes come back exactly as they were 🚀.
+
 ## Commands to erase mistakes
 The below command will undo all the commits but preserve the changes locally.
 $ git reset [commit]
